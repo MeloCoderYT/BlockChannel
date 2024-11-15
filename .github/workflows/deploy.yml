@@ -28,4 +28,4 @@ jobs:
         # Start Xvfb in the background
         Xvfb :99 -screen 0 1024x768x16 &
         export DISPLAY=:99
-        python REISED.py
+        python test_multi_window_app.py
