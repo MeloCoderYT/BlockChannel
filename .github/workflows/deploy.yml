@@ -25,7 +25,7 @@ jobs:
 
     - name: Run the multi-window application test
       env: 
-        DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
       run: |
         # Start Xvfb in the background
         Xvfb :99 -screen 0 1024x768x16 &
