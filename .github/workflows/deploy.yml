@@ -27,6 +27,6 @@ jobs:
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}  # Set this in your repository secrets
       run: |
-        python REISED.py  # Replace with your bot's main file
+        python /home/runner/work/BlockChannel/BlockChannel/REISED.py  # Replace with your bot's main file
 
 
