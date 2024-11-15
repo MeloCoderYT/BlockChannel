@@ -1,13 +1,11 @@
-import asyncio
-import discord
-import signal
+import asyncio, discord, signal,threading, os
 import tkinter as tk
 import keyboard as kb
 from discord.ext import commands
 from tkinter import messagebox, StringVar, ttk
 from tkinter.scrolledtext import ScrolledText
-import threading
 
+TOKEN = os.getenv('DISCORD_TOKEN')
 # Initialize Discord bot
 intent = discord.Intents.all()
 bot = commands.Bot(intents=intent, command_prefix="!")
