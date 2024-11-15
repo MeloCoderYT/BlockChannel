@@ -1,20 +1,13 @@
 import asyncio
 import discord
 import signal
-from secret import TOKEN
 import tkinter as tk
 import keyboard as kb
 from discord.ext import commands
 from tkinter import messagebox, StringVar, ttk
 from tkinter.scrolledtext import ScrolledText
 import threading
-import os
-from dotenv import load_dotenv
-# Load environment variables from .env file
-load_dotenv()
 
-# Get the token from the environment variable
-TOKEN = os.getenv('DISCORD_TOKEN')
 # Initialize Discord bot
 intent = discord.Intents.all()
 bot = commands.Bot(intents=intent, command_prefix="!")
