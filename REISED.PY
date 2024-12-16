@@ -77,12 +77,4 @@ async def my_message(ctx):
         msg = input()
         await ctx.reply(msg)
 
-if __name__ == "__main__":
-    
-    # Run the Discord bot in a separate thread
-    def run_bot(TOKEN):
-        bot.run(TOKEN)
-
-    bot_thread = threading.Thread(target=run_bot)
-    bot_thread.start()
-    
+bot.run(TOKEN)
