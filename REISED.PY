@@ -5,7 +5,7 @@ from discord.ext import commands
 from tkinter import messagebox, StringVar, ttk
 from tkinter.scrolledtext import ScrolledText
 
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.getenv(DISCORD_TOKEN)
 # Initialize Discord bot
 intent = discord.Intents.all()
 bot = commands.Bot(intents=intent, command_prefix="!")
