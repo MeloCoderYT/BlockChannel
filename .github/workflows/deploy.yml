@@ -27,7 +27,4 @@ jobs:
       env: 
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
       run: |
-        # Start Xvfb in the background
-        Xvfb :99 -screen 0 1024x768x16 &
-        export DISPLAY=:99
         python REISED.PY
