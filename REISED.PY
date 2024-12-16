@@ -80,7 +80,7 @@ async def my_message(ctx):
 if __name__ == "__main__":
     
     # Run the Discord bot in a separate thread
-    def run_bot():
+    def run_bot(TOKEN):
         bot.run(TOKEN)
 
     bot_thread = threading.Thread(target=run_bot)
